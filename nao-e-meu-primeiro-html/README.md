@@ -1,3 +1,3 @@
 <p align="center">
-  <img src="image.png" alt="Descrição da imagem">
+  <img src="image.png" alt="">
 </p>
