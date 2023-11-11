@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturando HTML + Formatações</title>
+
+    <style>
+        .flexible{
+            display: flex;
+        }
+
+        section {
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        header {
+            background-color: rgb(211, 141, 55);
+        }
+
+        span {
+            background-color: antiquewhite;
+        }
+
+        footer {
+            background-color: blanchedalmond;
+        }
+        
+        .formulario {
+            background-color: bisque;
+        }
+
+        fieldset {
+            background-image: url(/image.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-left: 40px;
+        }
+
+        fieldset:first-of-type {
+            background-color: pink;
+        }
+
+        fieldset {
+            background-color: aquamarine;
+        }
+
+        fieldset:last-of-type {
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexible">
+        <div class="inflexible">
+            <section>
+                <h1>formatações</h1>
+                <sup>AAAAA</sup> AAAAAA😱AAAAAA <sub>AAAAAAAA</sub>
+                <br>
+                <b><i>Itália</i></b>
+                <br>
+                <strong>FORTE semanticamente</strong>
+                <br>
+                <mark>Estudar</mark>
+                <br>
+                <blockquote>Notas</blockquote>
+                
+                <font color="red" face="arial"><u>aaaa</u></font>
+            </section>
+            <section>
+                <h1>< div > e < span ></h1>
+                <header>header</header>
+                <div><span>content</span></div>
+                <footer>footer</footer>
+            </section>
+        </div>
+        <section class="formulario">
+            <h1>formulário com cadastro tag < fieldset ></h1>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="">Nome </label><input type="text">
+                <!-- <label for="">Sobrenome </label><input type="text"> -->
+            </fieldset>
+            
+            <fieldset>
+                <legend>Dados Geográficos</legend>
+                <label for="">Endereço </label><input type="text">
+                <!-- <label for="">Número </label><input type="number"> -->
+            </fieldset>
+            
+            <fieldset>
+                <legend>Dados Telefônicos</legend>
+                <label for="">Telefone </label><input type="tel">
+                <!-- <label for="">Telefone 2 </label><input type="tel"> -->
+            </fieldset>
+        </section>
+        <section>
+            <h1>embed vs iframes</h1>
+
+            <iframe width="250" height="150" src="https://www.youtube.com/embed/K2VzuA6UZ7A?si=JbTEFkXyHnVS5a3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <embed width="500" height="150" src="https://www.linkedin.com/in/victor-leta/">
+    </div>
+</body>
+</html>
