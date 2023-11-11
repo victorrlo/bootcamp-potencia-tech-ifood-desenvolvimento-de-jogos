@@ -1,2 +1,3 @@
-# dio-desafio-github
-Desafio de Projeto sobre Git/GitHubd
+# Bootcamp Potência Tech iFood - Desenvolvimento de Jogos
+
+Repositório usado para o Bootcamp Potência Tech iFood - Desenvolvimento de Jogos na plataforma DIO.
