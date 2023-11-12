@@ -10,10 +10,11 @@
         }
         .organizacao{
             display: flex;
-            margin:0;
+            /* margin: auto; */
         }
-        .imagens{
-            margin: 0px 10px;
+        .column {
+            display: flex;
+            flex-direction: column;
         }
         img{
             width: 100%;
@@ -30,10 +31,114 @@
         .fundo-img {
             max-width: 100px;
             max-height: 100px;
-            
+            background-image: url();
         }
         .img-fundo{
+            background-image: repeating-radial-gradient(red 5%, green 15%, blue 60%);
+        }
+        .exemplo{
+            margin-right: 100px;
+            width: 120px;
+            height: 100px;
             background-image: url(_4ce7700c-c8c6-435a-a6c4-ef301bf7de54.jpeg);
+            background-size: 50px;
+            border: 5px solid;
+        }
+        .no-repeat {
+            background-repeat: no-repeat;
+        }
+        .repeat {
+            background-repeat: repeat;
+        }
+        .repeat-x {
+            background-repeat: repeat-x;
+        }
+        .repeat-y{
+            background-repeat: repeat-y;
+        }
+        .round {
+            background-repeat: round;
+        }
+        .position{
+            background-position: center top;
+        }
+        .exemplo2{
+            background-image: url(_4ce7700c-c8c6-435a-a6c4-ef301bf7de54.jpeg);
+            width: 120px;
+            height: 100px;
+            border: 2px solid;
+            background-size: contain;
+            background-repeat: round;
+            overflow: auto;
+        }
+        .fixed {
+            background-attachment: fixed;
+        }
+        .scroll {
+            background-attachment: scroll;
+        }
+        .local{
+            background-attachment: local;
+        }
+        .exemplo3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 150px;
+            height: 100px;
+            width: 100px;
+            background-size: 100%;
+            border: dotted 5px;
+            background-image: url(_4ce7700c-c8c6-435a-a6c4-ef301bf7de54.jpeg);
+        }
+        .padding-box{
+            padding: 2px;
+            background-origin: padding-box;
+        }
+        .border-box{
+            padding: 2px;
+            background-origin: border-box;
+        }
+        .content-box{
+            padding: 2px;
+            background-origin: content-box;
+        }
+        .clip-text{
+            -webkit-background-clip: text;
+            color:transparent;
+            background-clip: text;
+        }
+        .exemplo4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 150px;
+            height: 100px;
+            width: 100px;
+            background-size: 100%;
+            border: dotted 5px;
+            background-color: black;
+            background-image: url(_4ce7700c-c8c6-435a-a6c4-ef301bf7de54.jpeg);
+            background-blend-mode: luminosity;
+        }
+        p{
+            font-size: large;
+            font-weight: 900;
+        }
+        .exemplo5{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 150px;
+            height: 100px;
+            width: 100px;
+            background-size: 100%;
+            border: dotted 5px;
+            background:
+            url(_4ce7700c-c8c6-435a-a6c4-ef301bf7de54.jpeg)
+            no-repeat
+            round
+            ;
         }
 
     </style>
@@ -41,11 +146,69 @@
 </head>
 <body>
     <div class="organizacao">
-        <div class="imagens">
+        <div>
             <h1><code>background-image</code></h1>
             <div class="object-fit fundo img-fundo">
                 <img class="fundo-img" src="_4ce7700c-c8c6-435a-a6c4-ef301bf7de54.jpeg" alt="">
             </div>
+        </div>
+        <div class="organizacao">
+            <div class="column">
+                <code>background-repeat:no-repeat</code>
+                <div class="exemplo no-repeat"></div>
+                <code>background-repeat:repeat</code>
+                <div class="exemplo repeat"></div>
+            </div>
+            <div class="column">
+                <code>background-repeat:repeat-x</code>
+                <div class="exemplo repeat-x"></div>
+                <code>background-repeat:repeat-y</code>
+                <div class="exemplo repeat-y"></div>
+                <code>background-repeat:round</code>
+                <div class="exemplo round"></div>
+            </div>
+            <div class="column">
+                <code>background-repeat:no-repeat + <br>background-position:center top</code>
+                <div class="exemplo no-repeat position"></div>
+            </div>
+            <div class="column">
+                <code>background-attachment: fixed</code>
+                <div class="exemplo2 fixed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem unde reprehenderit vitae? Fugit libero provident est incidunt id sequi voluptas et. Laboriosam, culpa. Totam velit mollitia, dolorem tempora culpa quas?</div>
+            </div>
+            <div class="column">
+                <code>background-attachment: scroll</code>
+                <div class="exemplo2 scroll">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem unde reprehenderit vitae? Fugit libero provident est incidunt id sequi voluptas et. Laboriosam, culpa. Totam velit mollitia, dolorem tempora culpa quas?</div>
+                <code>background-attachment: local</code>
+                <div class="exemplo2 local">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem unde reprehenderit vitae? Fugit libero provident est incidunt id sequi voluptas et. Laboriosam, culpa. Totam velit mollitia, dolorem tempora culpa quas?</div>
+            </div>
+        </div>
+    </div>
+    <div class="organizacao">
+        <div class="column">
+            <code>background-origin: padding-box</code>
+            <div class="exemplo3 no-repeat padding-box"></div>
+        </div>
+        <div class="column">
+            <code>background-origin: border-box</code>
+            <div class="exemplo3 no-repeat border-box"></div>
+        </div>
+        <div class="column">
+            <code>background-origin: content-box</code>
+            <div class="exemplo3 no-repeat content-box"></div>
+        </div>
+    </div>
+    <div class="organizacao">
+        <div class="column">
+            <code>background-clip: text</code>
+            <div class="exemplo4 no-repeat clip-text"><p>GitHub</p></div>
+        </div>
+        <div class="column">
+            <code>background-blend-mode</code>
+            <div class="exemplo4 no-repeat"><p>GitHub</p></div>
+        </div>
+        <div class="column">
+            <code>propriedade background</code>
+            <div class="exemplo5 no-repeat"></div>
         </div>
     </div>
     
