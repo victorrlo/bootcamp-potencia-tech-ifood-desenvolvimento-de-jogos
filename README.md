@@ -1,9 +1,4 @@
-<style>
-  .bootcamp{
-    background-color:rgb(100,0,0);
-  }
-</style>
-<p class="bootcamp" align="center">
+<p align="center">
   <img src="image.png" alt="logo do ifood potencia tech bootcamp">
 </p>
 
