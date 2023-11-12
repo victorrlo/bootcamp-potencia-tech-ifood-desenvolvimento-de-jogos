@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .organizacao{
+            display: flex;
+            margin:0;
+        }
+
+        li{
+            list-style: none;
+        }
+        #pre-definidas {
+            background-color: aqua;
+        }
+        #current-color {
+            background-color: currentColor;
+        }
+        #rgb{
+            background-color: rgb(150, 67, 67);
+        }
+        #rgba{
+            background-color: rgba(150, 67, 67,0.5);
+        }
+        #hex{
+            background-color: #FFCCFF;
+        }
+        #hex-transparencia{
+            background-color: #FFCCFF50;
+        }
+        #hsl {
+            background-color: hsl(125, 100%, 50%);
+        }
+        #hsla{
+            background-color: hsla(125, 100%, 50%, .2);
+        }
+        .object-fit{
+            background-color: red;
+            /* width: 100px; */
+            height: 100px;
+            border: 5px solid brown;
+        }
+        .contain {
+            object-fit: contain;
+        }
+        .cover {
+            object-fit: cover;
+        }
+        .none{
+            object-fit: none;
+        }
+        .position{
+            object-position:10px 10px;
+        }
+        .imagens{
+            margin: 0px 10px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .fundo {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fundo-img {
+            max-width: 100px;
+            max-height: 100px;
+            
+        }
+        .img-fundo{
+            background-image: url(_4ce7700c-c8c6-435a-a6c4-ef301bf7de54.jpeg);
+        }
+
+    </style>
+    <title>Cores</title>
+</head>
+<body>
+    <div class="organizacao">
+        <div class="cores">
+            <h1>Cores</h1>
+            <ul>
+                <li id="pre-definidas">cores pré-definidas</li>
+                <li id="current-color">current color</li>
+                <li id="hex">hexadecimal</li>
+                <li id="hex-transparencia">hexadecimal transparencia</li>
+                <li id="rgb">rgb</li>
+                <li id="rgba">rgba</li>
+                <li id="hsl">hsl</li>
+                <li id="hsla">hsla</li>
+            </ul> 
+        </div> 
+        <div class="imagens">
+            <h1>imagens <br><code>object<br>-fit:fill</code></h1>
+            <div class="object-fit">
+                <img src="_4ce7700c-c8c6-435a-a6c4-ef301bf7de54.jpeg" alt="">
+            </div>
+            <h1><br><code>object<br>-fit:contain</code></h1>
+            <div class="object-fit">
+                <img class="contain" src="_4ce7700c-c8c6-435a-a6c4-ef301bf7de54.jpeg" alt="">
+            </div>
+        </div>
+        <div class="imagens">
+            <h1><br><code>object<br>-fit:cover</code></h1>
+            <div class="object-fit">
+                <img class="cover" src="_4ce7700c-c8c6-435a-a6c4-ef301bf7de54.jpeg" alt="">
+            </div>
+            <h1><br><code>object<br>-fit:none</code></h1>
+            <div class="object-fit">
+                <img class="none" src="_4ce7700c-c8c6-435a-a6c4-ef301bf7de54.jpeg" alt="">
+            </div>
+        </div>
+        <div class="imagens">
+            <h1><code>object<br>-position:<br>10px 10px</code><br><code>object<br>-fill:cover</code></h1>
+            <div class="object-fit">
+                <img class="cover position" src="_4ce7700c-c8c6-435a-a6c4-ef301bf7de54.jpeg" alt="">
+            </div>
+        </div>
+        <div class="imagens">
+            <h1><code>background-image</code></h1>
+            <div class="object-fit fundo img-fundo">
+                <img class="fundo-img" src="_4ce7700c-c8c6-435a-a6c4-ef301bf7de54.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
