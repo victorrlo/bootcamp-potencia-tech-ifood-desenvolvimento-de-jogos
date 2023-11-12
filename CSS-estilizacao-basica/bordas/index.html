@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .organizacao{
+            margin: auto;
+            display: flex;
+        }
+        h2{
+            margin-right: 100px;
+        }
+        .bordas{
+            height: 100px;
+            width: 100px;
+            background-color: antiquewhite;
+            border: 10px dashed chocolate;
+            border-width: 10px;
+            border-style: dashed;
+            border-color: chocolate;
+        }
+        .radius{
+            border-radius: 100px;
+        }
+        .image-source{
+            border: 10px solid;
+            border-image-source: url(_4ce7700c-c8c6-435a-a6c4-ef301bf7de54.jpeg);
+        }
+        .image-slice {
+            
+            border-image-slice: 390 fill;
+        }
+        .img{
+            margin-left: 150px;
+        }
+        .image-width {
+            border-image-width: 40px;
+        }
+    </style>
     <title>Bordas</title>
 </head>
 <body>
+    <div class="organizacao">
+        <div>
+            <h1>Bordas</h1>
+            Podemos definir as configurações das bordas através das propriedades:
+            <ul>
+                <li>border-width</li>
+                <li>border-style</li>
+                <li>border-color</li>
+            </ul>
+        </div>
+        <div class="img">
+            <h1>border-image-slice</h1>
+            <img src="image-1.png" width="400px">
+        </div>
+    </div>  
+    
+    <div class="organizacao">
+        <div>
+            <h2>Exemplo</h2>
+            <div class="bordas">
+        </div>    
+    </div>
+    <div class="organizacao">
+        <div>
+            <h2>border-radius:100px</h2>
+            <div class="bordas radius">
+        </div>    
+    </div>
+    <div class="organizacao">
+        <div>
+            <h2>border-image-source + <br>border-image-width:40px</h2>
+            <div class="bordas image-source image-width">
+        </div>    
+    </div>
+    <div class="organizacao">
+        <div>
+            <h2>border-image-slice <br>:390 fill</h2>
+            <div class="bordas image-source image-slice">
+        </div>    
+    </div>
     
 </body>
 </html>
