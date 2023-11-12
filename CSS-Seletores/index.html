@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            display: flex;
+            justify-content: center;
+            background-color: blue;
+            color: aquamarine;
+            margin-bottom: 0;
+        }
+
+        ul {
+            margin-top: 0;
+            background-color: aquamarine;
+            color: blue;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        li:first-of-type {
+            color: red;
+        }
+
+        #id {
+            color: green
+        }
+
+        .class {
+            color:gold;
+        }
+
+        *{
+            font-weight: 100;
+        }
+
+        [type="text"] {
+            color: purple;
+        }
+
+        [href~="aa"] {
+            color: blueviolet;
+        }
+
+        [href^="://"] {
+            color: burlywood;
+        }
+
+        [href$="b"] {
+            color: coral;
+        }
+
+        [href*="cc"] {
+            color: brown;
+        }
+
+
+    </style>
+
+    <title>Seletores</title>
+</head>
+<body>
+    <h1>Seletores</h1>
+    <ul>
+        <div>
+            <li><strong>por Tipo :</strong></li>
+            <li id="id"><strong>por ID #:</strong></li>
+            <li class="class"><strong>por Classe . :</strong></li>
+            <li class="universal"><strong>Universal (font-weight:100):</strong></li>
+            <li type="text"><strong>por Atributo ([atrib]) :</strong></li>
+            <a href="http://"><strong>por Atributo ([atrib]) :</strong></a>
+            <a href="http:// aa"><strong>por Atributo (um atributo dentro da string de atributo) :</strong></a>
+            <br>
+            <a href="://"><strong>por Atributo (prefixo nos atributos) :</strong></a>
+            <br>
+            <a href="://b"><strong>por Atributo (sufixo nos atributos) :</strong></a>
+            <br>
+            <a href=":/cc/b"><strong>por Atributo (ocorrência da palavra em qualquer posição do atributo) :</strong></a>
+        </div>
+    </ul>
+</body>
+</html>
