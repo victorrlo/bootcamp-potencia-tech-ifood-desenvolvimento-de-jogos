@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            background-color: antiquewhite;
+        }
+
+        div.a {
+            background-color: aquamarine;
+        }
+
+        .organizacao {
+            display: flex;
+            justify-content: center;
+        }
+
+        div.organizacao > div{
+            margin-right: 50px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .fundo-verde li {
+            background-color: green;
+        }
+
+        ul .fundo-verde-amarelo {
+            background-color: greenyellow;
+        }
+
+        .pai > .filho {
+            background-color: brown;
+        }
+
+        .fundo-azul li{
+            background-color: cornflowerblue;
+        }
+
+        .irmao +li{
+            background-color: cadetblue;
+        }
+
+        .irmao ~li {
+            color: aliceblue;
+        }
+
+        .largura-altura {
+            background-color: azure;
+            width: 50px;
+            height: 50px;
+        }
+
+        .inherit {
+            background-color: aquamarine;
+            height: inherit-25;
+            width: inherit;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+
+        div.dimensionamento {
+            background-color: burlywood;
+        }
+
+        .margin-auto {
+            display: flex;
+            margin:auto;
+        }
+        
+        .padding {
+            padding: 20px;
+        }
+
+        .box-sizing {
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+
+    <title>Combinadores</title>
+</head>
+<body>
+    <div class="organizacao">
+        <div class="agrupamento">
+            <h1>Agrupamento de Seletores</h1>
+            <p>Lorem, ipsum dolor.</p>
+            <div>div</div>
+            <div class="a">div</div>
+        </div>
+        <div class="combinadores">
+            <h1>Combinadores</h1>
+            <ul class="fundo-verde">Descedente
+                <li>1</li>
+                <li class="fundo-verde-amarelo">2</li>
+                <li>3</li>
+            </ul>
+            <ul class="pai fundo-verde">Filho
+                <li class="filho">1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            <ul class="fundo-azul">Irmão
+                <li class="irmao">1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+        <div class="dimensionamento">
+            <h1>Dimensionamento e Espaçamento</h1>
+            <div class="largura-altura">
+                largura e altura
+                <div class="inherit">
+                    inherit
+                </div>
+            </div>
+                <button>margin-top:10px</button>
+                <button class="margin-auto">margin:auto</button>
+                <button class="padding">padding:20px</button>
+                <div class="box-sizing">box-sizing</div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
