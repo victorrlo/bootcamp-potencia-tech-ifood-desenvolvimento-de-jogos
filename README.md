@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="image-4.png" alt="logo do ifood potencia tech bootcamp">
+  <img max-width:200px src="image-4.png" alt="logo do ifood potencia tech bootcamp">
 </p>
 <h1>Repositório usado para o <strong>Bootcamp Potência Tech iFood</strong> - Desenvolvimento de Jogos na plataforma DIO.</h1>
 
