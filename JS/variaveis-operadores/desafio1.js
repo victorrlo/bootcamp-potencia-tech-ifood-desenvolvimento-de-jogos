@@ -6,12 +6,12 @@
 // 3- distância km da viagem
 
 const precoCombustivel= 5.79;
-let kmPorLitro = 10;
+let kmPorLitro = 12;
 let deslocamento = 100;
 
 let consumoLitro = deslocamento/kmPorLitro;
 
 let gastoViagemCarro = consumoLitro*precoCombustivel;
 
-console.log(gastoViagemCarro);
+console.log(gastoViagemCarro.toFixed(2));
 
