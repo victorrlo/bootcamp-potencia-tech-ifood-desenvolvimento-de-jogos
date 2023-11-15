@@ -14,5 +14,6 @@ function verificarIdade(idade, nome){
 (function(){
     const nome = 'victor';
     const idade = 27;
+    
     verificarIdade(idade, nome);
 })();

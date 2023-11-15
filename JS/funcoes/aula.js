@@ -10,7 +10,9 @@ function calculoImc(peso, altura) {
     return (peso/quadrado(altura)).toFixed(2);
 }
 
-(function main() {
+
+// Main
+(function() {
     console.log('Programa Principal');
     console.log('------------------');
     sayMyName('victor');
