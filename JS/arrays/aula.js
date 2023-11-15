@@ -10,6 +10,12 @@
 
 // console.log(alunos)
 
+// const nome = `victor r l o`;
+// 
+// for(let i=0; i < nome.length; i++){
+//     console.log(nome[i]);
+// }
+
 const notas = [];
 
 notas.push(2);
@@ -19,6 +25,13 @@ notas.push(5);
 notas.push(6);
 notas.push(7);
 
-for(let index=0; index < notas.length; index++){
-    console.log(notas[index]);
+let soma = 0;
+
+for(let i=0; i<notas.length;i++){
+    const nota = notas[i];
+    soma += nota;
 }
+
+const media = soma/notas.length;
+
+console.log(media);
