@@ -19,14 +19,26 @@ ol.classes{
     grid-template-columns: 1fr 1fr;
 }
 
-ol.classes li{
+.classe{
     margin:0.5rem;
     padding:0.5rem;
-    background-color: #14a06f;
+    background-color: #49d0b0;
     color: #FFFFFF;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
+}
+
+.classe .cidade{
+    text-align: right;
+    color: #000000;
+    opacity: 0.3;
+}
+
+.classe .atributos{
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 ol.classes li img.invoca{
@@ -34,9 +46,13 @@ ol.classes li img.invoca{
     max-height: 50%;
 }
 
-ol.classes li img{
+.classe .details{
+    display: flex;
+}
+
+.classe .details img{
     max-width: 100%;
     height: 6rem;
     width: 4rem;
-    align-self: flex-end;
+    /* align-self: flex-end; */
 }
