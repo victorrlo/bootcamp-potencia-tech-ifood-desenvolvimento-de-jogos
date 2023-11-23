@@ -4,8 +4,13 @@
     font-weight: 900;
 }
 
+body {
+    background-color: #FEF6E2;
+}
+
 .content{
     padding:1rem;
+    
 }
 
 @media screen and (min-width:992px){
@@ -37,12 +42,19 @@ ol.classes{
 .classe{
     margin:0.5rem;
     padding:0.5rem;
-    background-color: #49d0b0;
+    background-color: #FFDA86;
     color: #FFFFFF;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     max-height: 11rem;
+}
+
+.classe .cidade img{
+    max-width: 20px;
+    position: relative;
+    bottom: -0.25rem;
+    right: -0.25rem;
 }
 
 .classe .cidade{
@@ -61,8 +73,8 @@ ol.classes{
 }
 
 .classe .atributo {
-    background-color: #61e1ca;
-    color:#FFFFFF;
+    background-color: #D7AB48;
+    color:#5c2c03;
     padding:0.25rem .5rem;
     margin:.25rem;
     font-size: .625rem;
@@ -70,12 +82,12 @@ ol.classes{
 }
 
 ol.classes li img.invoca{
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 75%;
+    max-height: 75%;
 }
 
 .classe .phrase{
-    color: #ffffff;  
+    color: #5c2c03;  
     text-align: right;
     font-size: .9rem;
 }
