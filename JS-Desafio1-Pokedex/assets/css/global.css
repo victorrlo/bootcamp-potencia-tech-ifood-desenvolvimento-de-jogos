@@ -17,6 +17,7 @@
 
 .content h1{
     margin:0;
+    color: #5c2c03;
 }
 
 ol.classes{
@@ -46,8 +47,8 @@ ol.classes{
 
 .classe .cidade{
     text-align: right;
-    color: #000000;
-    opacity: 0.3;
+    color: #5c2c03;
+    opacity: 0.5;
     font-weight: 400;
     font-size: .85rem;
     
