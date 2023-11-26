@@ -6,6 +6,7 @@
 
 body {
     background-color: #FEF6E2;
+    background-image: url(/JS-Desafio1-Pokedex/assets/images/background.jpg);
 }
 
 .content{
@@ -48,6 +49,7 @@ ol.classes{
     display: flex;
     flex-direction: column;
     max-height: 11rem;
+    box-shadow: 0.2rem 0.2rem rgb(238, 199, 107);
 }
 
 .classe .cidade img{
